@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 145vh;
+  /* border: 2px solid green; */
+}
+.Catagories-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  padding: 5px 50px;
+  margin: 10px 0;
+}
+.catagories-container-heading .deals-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+}
+.card-catagories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.card-catagories::-webkit-scrollbar {
+  height: 5px;
+}
+
+.card-catagories::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.card-catagories::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 3px,
+    transparent 3px,
+    transparent 3px
+  );
+  border-radius: 10px;
+}
+
+.cards {
+  width: 175px;
+  min-width: 155px;
+  flex-shrink: 0;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+  color: white !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+.card-catagories {
+  padding: 10px 0;
+}
+.card-catagories .furniture {
+  background-image: url(../images/furniture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .handbags {
+  background-image: url(../images/handbags.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .books {
+  background-image: url(../images/books.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.card-catagories .techs {
+  background-image: url(../images/techs.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .sneakers {
+  background-image: url(../images/sneakers.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .travels {
+  background-image: url(../images/travels.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/* Stryling for deals */
+.deals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55vh;
+  padding: 5px 50px;
+}
+.deals-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+  overflow-x: auto;
+}
+.deals-main-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.deals-main-container::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.deals-main-container::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 3px,
+    transparent 3px,
+    transparent 3px
+  );
+  border-radius: 10px;
+  width: 2%;
+  justify-content: center;
+}
+.deals-card-container {
+  min-width: 180px;
+  margin-right: 16px;
+  height: 230px;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.item-img {
+  width: 100%;
+  height: 70%;
+  background-color: green;
+  border-radius: 5px;
+  background-image: url(../images/furniture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wishlist {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px 0 0;
+}
+.wishlist .heart-icon {
+  color: palevioletred;
+}
+.item-description {
+  display: flex;
+  flex-direction: column;
+}
+.item-name-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+.item-rating-and-cart .rating {
+  color: green;
+  padding: 1px 0;
+}
+.item-rating-and-cart p {
+  font-size: 0.8em;
+  padding: 1px 0;
+}
+.rating-text {
+  color: rgb(186, 186, 14);
+  font-size: 0.8em;
+  padding-left: 5px;
+  color: black;
+}
+.card-button button {
+  border-radius: 50px;
+  padding: 2px 10px 3px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid rgb(67, 64, 64);
+  cursor: pointer;
+}
+
+/* Brands */
+.Brands-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35vh;
+  padding: 5px 50px;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+.brands-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+}
+
+.brands-container-details {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+}
+.card-brands {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: left;
+}
+.card-brands-img {
+  /* background-color: aqua; */
+  width: 45px;
+  height: 100%;
+  border-radius: 100px;
+  background-image: url("../images/epay.png");
+  background-size: cover;
+  background-repeat: auto;
+}
+.card-brands-details {
+  padding-left: 20px;
+}

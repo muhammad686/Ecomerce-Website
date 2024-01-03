@@ -1,0 +1,48 @@
+/project-root
+|-- /client
+|   |-- /public
+|   |   |-- index.html                  # Main HTML file for the React app
+|   |-- /src
+|   |   |-- /assets
+|   |   |   |-- /images                 # Image assets
+|   |   |   |-- /styles                 # Stylesheets
+|   |   |-- /components
+|   |   |   |-- /common                 # Reusable components
+|   |   |   |-- /product                # Components related to products
+|   |   |   |-- /cart                   # Components related to the shopping cart
+|   |   |   |-- /auth                   # Authentication components
+|   |   |-- /pages
+|   |   |   |-- Home.js                 # Main homepage component
+|   |   |   |-- ProductDetail.js        # Product detail page component
+|   |   |   |-- Cart.js                 # Shopping cart page component
+|   |   |   |-- Login.js                # Login page component
+|   |   |   |-- SignUp.js               # Sign up page component
+|   |   |-- /services
+|   |   |   |-- productService.js       # Service for handling product-related API requests
+|   |   |   |-- authService.js          # Service for handling authentication-related API requests
+|   |   |-- /context
+|   |   |   |-- AuthContext.js          # React context for managing authentication state
+|   |   |-- /hooks
+|   |   |   |-- UseAuth.js              # Custom hook for handling authentication
+|   |   |-- App.js
+|   |   |-- index.js                    # Entry point for React app
+|   |   |-- Routes.js                   # Component defining app routes
+|   |-- package.json                    # Client-side dependencies and scripts
+
+|-- /server
+|   |-- /src
+|   |   |-- /controllers               # Logic for handling HTTP requests
+|   |   |-- /models                    # Database models
+|   |   |-- /routes                    # API route definitions
+|   |   |-- /middlewares               # Custom middlewares
+|   |   |-- /config                    # Configuration files
+|   |   |-- server.js                  # Express server setup
+|   |   |-- database.js                # Database connection setup
+|   |-- package.json                   # Server-side dependencies and scripts
+
+|-- /database
+|   |-- /migrations                    # Database migration scripts
+|   |-- /seeds                         # Database seeding scripts
+
+|-- package.json                       # Root-level dependencies and scripts
+|-- README.md                          # Project documentation

@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container {
+  background-image: url(../images/back-img.jpg);
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+  padding: 0px 50px;
+}
+
+.descriptions {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.descriptions h1 {
+  font-size: 4em;
+  font-weight: 600;
+  padding: 0;
+  padding: 0;
+  margin: 0;
+}
+.descriptions .heading1 {
+  color: red;
+}
+.descriptions .heading2 {
+  color: rgb(55, 7, 99);
+}
+.descriptions p {
+  padding: 10px 0;
+  text-align: justify;
+  max-width: 40%;
+  color: rgb(55, 7, 99);
+}
+
+.descriptions button {
+  margin-top: 10px;
+  width: 15%;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  font: 1em sans-serif;
+  border: none;
+}
+.shopnow:hover {
+  background-color: rgb(195, 217, 236);
+  border: 1px solid red;
+  color: red;
+  font-weight: bold;
+}
+.sliderdots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 30px 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sliderdots li:hover {
+  background-color: red;
+}
