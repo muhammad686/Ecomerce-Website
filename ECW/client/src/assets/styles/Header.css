@@ -72,11 +72,12 @@
   border: 1px solid #ccc;
   border-radius: 19px;
   font-size: 1em;
+  width: 500px;
 }
 .search-icon {
   position: absolute;
   top: 23px;
-  right: 24%;
+  right: 40%;
   color: rgb(153, 166, 166);
 }
 @media (max-width: 352px) {

@@ -6,6 +6,15 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+*::-webkit-scrollbar {
+  overflow-y: auto !important;
+  width: 5px;
+  background-color: whitesmoke;
+}
+.main-container-homepage {
+  width: 100%;
+  height: 505vh;
+}
 
 .home-container {
   background-image: url(../images/back-img.jpg);
@@ -53,6 +62,7 @@
   color: white;
   font: 1em sans-serif;
   border: none;
+  /* background-color: blue; */
 }
 .shopnow:hover {
   background-color: rgb(195, 217, 236);
@@ -65,10 +75,523 @@
   width: 15px;
   height: 15px;
   margin: 30px 5px;
-  background-color: #fff;
+  background-color: #8fd5e9;
   border-radius: 50%;
   cursor: pointer;
 }
 .sliderdots li:hover {
   background-color: red;
+}
+
+/* catagories */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 145vh;
+  /* border: 2px solid green; */
+}
+.Catagories-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  padding: 5px 50px;
+  margin: 10px 0;
+}
+.catagories-container-heading .deals-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+}
+.card-catagories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.card-catagories::-webkit-scrollbar {
+  height: 5px;
+}
+
+.card-catagories::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.card-catagories::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 3px,
+    transparent 3px,
+    transparent 3px
+  );
+  border-radius: 10px;
+}
+
+.cards {
+  width: 175px;
+  min-width: 155px;
+  flex-shrink: 0;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+  color: white !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+.card-catagories {
+  padding: 10px 0;
+}
+.card-catagories .furniture {
+  background-image: url(../images/furniture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .handbags {
+  background-image: url(../images/handbags.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .books {
+  background-image: url(../images/books.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.card-catagories .techs {
+  background-image: url(../images/techs.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .sneakers {
+  background-image: url(../images/sneakers.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card-catagories .travels {
+  background-image: url(../images/travels.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/* Stryling for deals */
+.deals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 115vh;
+  padding: 5px 50px;
+}
+.deals-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+}
+.deals-catagories {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+.chose-by-catagory {
+  font-size: 1em;
+  padding: 5px 0;
+  color: rgb(55, 7, 99);
+  background-color: whitesmoke;
+  border: 1px solid rgb(55, 7, 99);
+  padding: 5px 15px 7px 15px;
+  margin-top: 25px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.deals-main-container {
+  display: grid;
+  grid-template-columns: repeat(6, 6fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-between;
+  width: 100%;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+/* .deals-main-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.deals-main-container::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.deals-main-container::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 3px,
+    transparent 3px,
+    transparent 3px
+  );
+  border-radius: 10px;
+  width: 2%;
+  justify-content: center;
+} */
+
+.deals-card-container {
+  min-width: 180px;
+  margin-right: 16px;
+  height: 240px;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.item-img {
+  width: 100%;
+  height: 60%;
+  background-color: green;
+  border-radius: 5px;
+  background-image: url(../images/furniture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wishlist {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px 0 0;
+}
+.wishlist .heart-icon {
+  color: palevioletred;
+}
+.item-description {
+  display: flex;
+  flex-direction: column;
+}
+.item-name-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+.item-rating-and-cart .rating {
+  color: green;
+  padding: 1px 0;
+}
+.item-rating-and-cart p {
+  font-size: 0.8em;
+  padding: 1px 0;
+}
+.rating-text {
+  color: rgb(186, 186, 14);
+  font-size: 0.8em;
+  padding-left: 5px;
+  color: black;
+}
+.card-button button {
+  border-radius: 50px;
+  padding: 2px 10px 3px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid rgb(67, 64, 64);
+  cursor: pointer;
+}
+
+/* Brands */
+.Brands-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35vh;
+  padding: 5px 50px;
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+.brands-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+}
+
+.brands-container-details {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+}
+.card-brands {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: left;
+}
+.card-brands-img {
+  /* background-color: aqua; */
+  width: 45px;
+  height: 100%;
+  border-radius: 100px;
+  background-image: url("../images/epay.png");
+  background-size: cover;
+  background-repeat: auto;
+}
+.card-brands-details {
+  padding-left: 20px;
+}
+
+/* discount section */
+
+.discount-main-container {
+  width: 100%;
+  height: 65vh;
+  padding: 5px 50px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+}
+.discount-container-heading h1 {
+  padding: 10px 0;
+  margin-bottom: 5px;
+  color: rgb(55, 7, 99);
+}
+.discount-container-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.discount-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: left;
+}
+.discount-details {
+  justify-content: left;
+  width: 100%;
+  padding: 10px;
+  height: 50%;
+}
+.discount-details h3 {
+  font-weight: bold;
+  padding: 2px;
+}
+.discount-details h2 {
+  font-weight: bold;
+  padding: 2px;
+}
+.discount-details p {
+  font-size: 0.6em;
+  padding: 2px;
+}
+.discount-img {
+  width: 100%;
+  height: 50%;
+  background-image: url("../images/epay.png");
+  background-size: cover;
+  background-repeat: auto;
+}
+
+/* weekly Deals */
+
+.weekly-deals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65vh;
+  padding: 30px 50px 10px 50px;
+  /* margin-top: 10px; */
+}
+.weekly-deals-container-heading h1 {
+  justify-content: left;
+  color: rgb(55, 7, 99);
+  font-size: 1.9em;
+  margin-bottom: 5px;
+}
+.weekly-deals-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.weekly-deals-main-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.weekly-deals-main-container::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+.weekly-deals-main-container::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 1) 0,
+    rgba(0, 0, 0, 1) 3px,
+    transparent 3px,
+    transparent 3px
+  );
+  border-radius: 10px;
+  width: 2%;
+  justify-content: center;
+}
+.weekly-deals-card-container {
+  min-width: 180px;
+  margin-right: 16px;
+  height: 240px;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.weekly-item-img {
+  width: 100%;
+  height: 60%;
+  background-color: green;
+  border-radius: 5px;
+  background-image: url(../images/travels.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.weekly-wishlist {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px 0 0;
+}
+.weekly-wishlist .weekly-heart-icon {
+  color: palevioletred;
+}
+.weekly-item-description {
+  display: flex;
+  flex-direction: column;
+}
+.weekly-item-name-and-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+.weekly-item-rating-and-cart .rating {
+  color: green;
+  padding: 1px 0;
+}
+.weekly-item-rating-and-cart p {
+  font-size: 0.8em;
+  padding: 1px 0;
+}
+.weekly-rating-text {
+  color: rgb(186, 186, 14);
+  font-size: 0.8em;
+  padding-left: 5px;
+  color: black;
+}
+.weekly-card-button button {
+  border-radius: 50px;
+  padding: 2px 10px 3px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid rgb(67, 64, 64);
+  cursor: pointer;
+}
+
+/* Cashbacks sections */
+.CashBacks {
+  width: 100%;
+  height: 95vh;
+  padding: 5px 50px;
+}
+.main-cashback-container {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/furniture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.card-of-cashbacks {
+  width: 400px;
+  height: 400px;
+  display: block;
+  float: right;
+  background-color: green;
+  position: relative;
+  top: 30px;
+  right: 10%;
+  padding: 40px;
+}
+.card-of-cashbacks h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.card-of-cashbacks p {
+  font-size: 1em;
+  padding: 5px 0;
+  color: white;
+}
+
+.card-of-cashbacks button {
+  font-size: 1em;
+  padding: 5px 0;
+  color: white;
+  background-color: green;
+  border: 1px solid white;
+  padding: 5px 15px 7px 15px;
+  margin-top: 25px;
+  border-radius: 50px;
 }

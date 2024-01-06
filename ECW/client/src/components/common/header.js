@@ -17,18 +17,6 @@ const Header = () => {
       <ul className="linksofnavbar">
         <li className="navLinks">
           {" "}
-          <a href="#"> Catagories</a>
-        </li>
-        <li className="navLinks">
-          {" "}
-          <a href="#"> Deals</a>
-        </li>
-        <li className="navLinks">
-          {" "}
-          <a href="#"> What's New</a>
-        </li>
-        <li className="navLinks">
-          {" "}
           <input
             type="text"
             className="Search-product"
@@ -39,6 +27,15 @@ const Header = () => {
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
           </li>
         </li>
+        <li className="navLinks">
+          {" "}
+          <a href="#"> Catagories</a>
+        </li>
+        <li className="navLinks">
+          {" "}
+          <a href="#"> Deals</a>
+        </li>
+
         <li className="navLinks">
           {" "}
           <a href="#">
