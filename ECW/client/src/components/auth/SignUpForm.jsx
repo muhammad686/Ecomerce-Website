@@ -1,44 +1,111 @@
-// SignUpForm.jsx
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../assets/styles/singUpLogin.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faEnvelope,
+  faLock,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
-const SignUpForm = ({ toggleForm }) => {
+const SignUp = () => {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    countryCode: "+1", // Default country code
+    contactNumber: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your form submission logic here using formData
+    console.log("Form submitted:", formData);
+  };
+
   return (
-    <div className="auth-form-container">
+    <div className="form-container">
       <h2>Sign Up</h2>
-      <div className="sign-up-form-container">
-        <input type="text" className="form-control" placeholder="Username" />
-        <input type="text" className="form-control" placeholder="Email" />
-        <input
-          type="password"
-          className="form-control"
-          placeholder="Password"
-        />
-        <input
-          type="password"
-          className="form-control"
-          placeholder="Confirm Password"
-        />
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </div>
-      <div className="third-party-sign-up">
-        <p>Login with</p>
-        <span>
-          <div className="btn btn-outline-dark">Google</div>
-          <div className="btn btn-outline-primary">Facebook</div>
-          <div className="btn btn-danger">Pinterest</div>
-        </span>
-      </div>
-      <div className="login-if-registered">
-        <div className="toggle-link" onClick={toggleForm}>
-          Already have an account? Login
+      <form onSubmit={handleSubmit}>
+        <div className="input-name">
+          <FontAwesomeIcon icon={faUser} className="username" />
+          <input
+            type="text"
+            placeholder="Username"
+            className="text-name"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+            required
+          />
         </div>
-      </div>
+        <div className="input-name">
+          <FontAwesomeIcon icon={faEnvelope} className="email" />
+          <input
+            type="text"
+            placeholder="Email"
+            className="text-name"
+            name="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-name">
+          <FontAwesomeIcon icon={faLock} className="lock" />
+          <input
+            type="password"
+            placeholder="Password"
+            className="text-name"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="input-name">
+          <FontAwesomeIcon icon={faPhone} className="phone" />
+
+          <input
+            type="tel"
+            placeholder="Contact Number"
+            className="text-name"
+            name="contactNumber"
+            value={formData.contactNumber}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div class="input-name">
+          <input type="checkbox" id="cb" class="check-button" required />
+          <label for="cb" class="check">
+            I accept the terms and conditions
+          </label>
+        </div>
+        <div className="input-name">
+          <input
+            type="submit"
+            className="button"
+            name="submit"
+            value="Sign Up"
+          />
+        </div>
+      </form>
+      <p>
+        Already have an account <Link to="/">Login</Link>
+      </p>
     </div>
   );
 };
 
-export default SignUpForm;
+export default SignUp;

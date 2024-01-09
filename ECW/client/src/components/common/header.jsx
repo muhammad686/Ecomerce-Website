@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
   faUser,
-  faBars,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
-import "../../assets/styles/Header.css"; // Import a separate CSS file for styling
+import "../../assets/styles/Header.css";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -38,7 +38,7 @@ const Header = () => {
 
         <li className="navLinks">
           {" "}
-          <a href="#">
+          <a to="#">
             <FontAwesomeIcon icon={faUser} /> Account
           </a>
         </li>
