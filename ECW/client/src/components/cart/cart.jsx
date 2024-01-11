@@ -1,42 +1,24 @@
 import React from "react";
-import PropTypes from "prop-types";
-
-const Cart = ({ cartItems }) => {
-  const calculateTotalPrice = () => {
-    return cartItems
-      .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
-  };
-
+import "../../assets/styles/cart.css";
+const Cart = () => {
   return (
-    <div className="cart-container">
-      <h2>Your Cart</h2>
-      {cartItems.length === 0 ? (
-        <p className="empty-cart-message">Your cart is empty.</p>
-      ) : (
-        <div>
-          {cartItems.map((item) => (
-            <div key={item.id} className="cart-item">
-              <img src={item.image} alt={item.name} className="item-image" />
-              <div className="item-details">
-                <h3>{item.name}</h3>
-                <p className="item-price">${item.price.toFixed(2)}</p>
-                <p className="item-quantity">Quantity: {item.quantity}</p>
-              </div>
-            </div>
-          ))}
-          <div className="cart-total">
-            <p>Total: ${calculateTotalPrice()}</p>
-            <button className="checkout-button">Checkout</button>
-          </div>
+    <div className="main-card-container">
+      <div className="cards-container">
+        <div className="img"></div>
+        <div className="details">
+          <p>product name</p>
+          <p>product rating</p>
         </div>
-      )}
+        <div className="action-links"></div>
+        <div className="price"></div>
+      </div>
+      <div className="checkout-container">
+        <h4>Total</h4>
+        <h2>$199</h2>
+        <button type="submit">Checkout</button>
+      </div>
     </div>
   );
-};
-
-Cart.propTypes = {
-  cartItems: PropTypes.array.isRequired,
 };
 
 export default Cart;

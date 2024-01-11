@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-card-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  padding: 5px;
+  margin-left: 50px;
+}
+.cards-container {
+  border: 1px solid black;
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  background-image: url("../images/books.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  border: 1px solid black;
+  height: 100%;
+}
+.details {
+  width: 400px;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 25px 5px;
+  justify-content: left;
+}
+
+.checkout-container {
+  width: 30%;
+  text-align: center;
+}
