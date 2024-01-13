@@ -18,9 +18,6 @@ const Catagory = () => {
           <div className="cards furniture">Furniture</div>
           <div className="cards handbags">HandBags</div>
           <div className="cards books">Books</div>
-          <div className="cards techs">Techs</div>
-          <div className="cards sneakers">Sneakers</div>
-          <div className="cards travels">Travels</div>
         </div>
       </div>
     </div>

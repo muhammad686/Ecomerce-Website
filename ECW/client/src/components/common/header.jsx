@@ -6,14 +6,14 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/styles/Header.css";
-// import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="header-container">
-      <ul className="logo">
+      <Link to={"/"} className="logo">
         <FontAwesomeIcon icon={faShoppingCart} className="menu-icon" /> ShopCart
-      </ul>
+      </Link>
       <ul className="linksofnavbar">
         <li className="navLinks">
           {" "}
@@ -29,24 +29,24 @@ const Header = () => {
         </li>
         <li className="navLinks">
           {" "}
-          <a href="#"> Catagories</a>
+          <NavLink to="/catagories"> Catagories</NavLink>
         </li>
         <li className="navLinks">
           {" "}
-          <a href="#"> Deals</a>
+          <NavLink to="/deals"> Deals</NavLink>
         </li>
 
         <li className="navLinks">
           {" "}
-          <a to="#">
+          <NavLink to="/account">
             <FontAwesomeIcon icon={faUser} /> Account
-          </a>
+          </NavLink>
         </li>
         <li className="navLinks">
           {" "}
-          <a href="#">
+          <NavLink to="/cart">
             <FontAwesomeIcon icon={faShoppingCart} /> Cart
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
