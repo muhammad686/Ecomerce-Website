@@ -9,13 +9,19 @@
 .main-card-container {
   width: 90%;
   display: flex;
-  flex-direction: row;
-  border: 1px solid green;
+  flex-direction: column;
+
+  box-shadow: 1px 1px 0 2px rgba(0, 0, 0, 0, 0.3);
   padding: 5px;
   margin-left: 50px;
 }
+.cart-list {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0;
+  border: 3px solid whitesmoke;
+}
 .cards-container {
-  border: 1px solid black;
   width: 70%;
   height: 100px;
   display: flex;
@@ -27,21 +33,58 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100px;
-  border: 1px solid black;
+
   height: 100%;
 }
-.details {
+.cart-item-description {
   width: 400px;
   height: 100%;
-  border: 1px solid blue;
+
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding: 25px 5px;
+  padding: 5px 20px;
   justify-content: left;
+}
+.item-rating-and-cart {
+  font-size: 0.9em;
+}
+.rating {
+  color: yellow !important;
+}
+.rating-text {
+  color: black !important;
+  font-size: 0.9em;
+}
+.action-links {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-end;
+  /* border: 2px solid blueviolet; */
+  width: 280px;
+  padding: 10px;
+  font-size: 0.9em;
 }
 
 .checkout-container {
   width: 30%;
-  text-align: center;
+  text-align: left;
+  /* border: 1px solid green; */
+  padding: 5px 20px;
+}
+.checkout-container h6,
+h2 {
+  padding: 2px 0;
+}
+.checkout-container button {
+  width: 200px;
+  margin-top: 4px;
+  padding: 4px 0;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  min-height: 30px;
 }
