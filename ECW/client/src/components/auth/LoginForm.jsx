@@ -9,7 +9,7 @@ const Login = () => {
     username: "",
     email: "",
     password: "",
-    countryCode: "+1", // Default country code
+    countryCode: "+1",
     contactNumber: "",
   });
 
